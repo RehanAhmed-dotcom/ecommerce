@@ -15,7 +15,7 @@ const Home = ({ products, bannerData }) => {
           <Product key={item._id} product={item} />
         ))}
       </div>
-      <FooterBanner />
+      <FooterBanner footerBanner={bannerData && bannerData[0]} />
     </>
   );
 };
